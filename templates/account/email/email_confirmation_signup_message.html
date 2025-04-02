@@ -1,0 +1,21 @@
+{% load static %} {% load account %} {% load i18n %} {%autoescape off%}
+<ce>
+    <h3>{{ site_name }}</h3>
+    <h4>Verifica tu Email</h4>
+    <p>
+        ¿Tenemos la dirección de correo electrónico correcta para contactarte? Para confirmarlo, haz clic en el botón de abajo.
+    </p>
+    <a href="http://{{current_site}}/auth/signup-verification/{{key}}">
+        <bu>Confirmar Email</bu>
+    </a>
+    <footer>
+        <div>
+            <sma>Gracias</sma>
+            <br />
+            <sm>Equipo {{ site_name }}</sm>
+            <br />
+            <sm>http://{{ current_site }}</sm>
+        </div>
+    </footer>
+</ce>
+{% endautoscape %}
