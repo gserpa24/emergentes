@@ -192,8 +192,6 @@ SWAGGER_SETTINGS = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = ['http://*']
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'home/static'),
 ]

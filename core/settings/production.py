@@ -32,3 +32,5 @@ STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 EMAIL_HOST_USER = env['EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = env['EMAIL_HOST_PASSWORD']
 DEFAULT_FROM_EMAIL = env['DEFAULT_FROM_EMAIL']
+
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://emergentes-production.up.railway.app']
