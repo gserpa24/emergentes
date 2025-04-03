@@ -16,13 +16,6 @@ services:
   api:
     build: .
     container_name: api
-    command: sh -c "
-      echo 'Esperando a la base de datos...';
-      while ! nc -z db 3306; do sleep 1; done;
-      echo 'Base de datos lista, ejecutando migraciones...';
-      python manage.py migrate;
-      echo 'Iniciando Gunicorn...';
-      gunicorn --bind 0.0.0.0:8000 --workers=4 core.wsgi --reload"
     env_file:
       - .env
     ports:
