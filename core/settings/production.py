@@ -11,7 +11,7 @@ SECRET_KEY = env['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'emergentes-production.up.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -38,5 +38,9 @@ CSRF_TRUSTED_ORIGINS = ['http://*', 'https://emergentes-production.up.railway.ap
 
 # Permitir solo dominios específicos:
 CORS_ALLOWED_ORIGINS = [
-     "https://emergentes-production.up.railway.app",
+    'https://emergentes-production.up.railway.app',
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+CORS_ALLOW_HEADERS = ["authorization", "content-type"]
