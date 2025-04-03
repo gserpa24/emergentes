@@ -44,6 +44,7 @@ BASE_APPS = [
     'rest_framework_simplejwt',
 
     'drf_yasg',
+    'home'
 ]
 
 LOCAL_APP = []

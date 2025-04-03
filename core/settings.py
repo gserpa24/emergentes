@@ -197,3 +197,9 @@ SWAGGER_SETTINGS = {
         'Bearer': {'type': 'apiKey', 'name': 'Authorization', 'in': 'header'}
     }
 }
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
+CORS_ALLOW_HEADERS = ['authorization', 'content-type']
