@@ -29,7 +29,6 @@ BASE_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
-    'corsheaders',
     'whitenoise.runserver_nostatic',
 
     'allauth',
@@ -43,6 +42,7 @@ BASE_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
 
+    'corsheaders',
     'drf_yasg',
     'home'
 ]

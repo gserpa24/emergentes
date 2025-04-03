@@ -39,8 +39,10 @@ CSRF_TRUSTED_ORIGINS = ['http://*', 'https://emergentes-production.up.railway.ap
 # Permitir solo dominios específicos:
 CORS_ALLOWED_ORIGINS = [
     'https://emergentes-production.up.railway.app',
+    'http://localhost:8000',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
-CORS_ALLOW_HEADERS = ["authorization", "content-type"]
+CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
+CORS_ALLOW_HEADERS = ['authorization', 'content-type']
+
