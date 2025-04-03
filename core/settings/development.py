@@ -21,3 +21,5 @@ DATABASES = {
 EMAIL_HOST_USER = 'gusserpa02@gmail.com'
 EMAIL_HOST_PASSWORD = 'fsfmwbefuvrpvtns'
 DEFAULT_FROM_EMAIL = 'gusserpa02@gmail.com'
+
+CORS_ALLOW_ALL_ORIGINS = True

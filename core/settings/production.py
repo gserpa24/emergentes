@@ -18,12 +18,12 @@ ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-        #        'ENGINE': 'django.db.backends.mysql',
-        #        'NAME': env['DB_NAME'],
-        #        'USER': env['DB_USER'],
-        #        'PASSWORD': env['DB_PASSWORD'],
-        #        'HOST': env['DB_HOST'],
-        #        'PORT': env['DB_PORT'],
+    #        'ENGINE': 'django.db.backends.mysql',
+    #        'NAME': env['DB_NAME'],
+    #        'USER': env['DB_USER'],
+    #        'PASSWORD': env['DB_PASSWORD'],
+    #        'HOST': env['DB_HOST'],
+    #        'PORT': env['DB_PORT'],
 }
 
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
@@ -33,3 +33,10 @@ EMAIL_HOST_PASSWORD = env['EMAIL_HOST_PASSWORD']
 DEFAULT_FROM_EMAIL = env['DEFAULT_FROM_EMAIL']
 
 CSRF_TRUSTED_ORIGINS = ['http://*', 'https://emergentes-production.up.railway.app']
+
+# CORS_ALLOW_ALL_ORIGINS = True
+
+# Permitir solo dominios específicos:
+CORS_ALLOWED_ORIGINS = [
+     "https://emergentes-production.up.railway.app",
+]
