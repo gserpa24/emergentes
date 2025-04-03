@@ -175,7 +175,6 @@ cython_debug/
 
 # Custom ignore
 mysql_data/
-static/
 staticfiles/
 .git/
 db.sqlite3
