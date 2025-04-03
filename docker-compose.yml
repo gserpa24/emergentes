@@ -1,7 +1,7 @@
 services:
   db:
-    image: mariadb:latest
-    container_name: mariadb
+    image: mysql:8.0
+    container_name: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=dbtest
@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mariadb_data:/var/lib/mysql
+      - ./mysql_data:/var/lib/mysql
     restart: on-failure
 
   api:

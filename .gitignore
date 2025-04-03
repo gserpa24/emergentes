@@ -174,9 +174,8 @@ cython_debug/
 .pypirc
 
 # Custom ignore
-mariadb_data/
+mysql_data/
 static/
 staticfiles/
 .git/
-mariadb_data/
 db.sqlite3
