@@ -199,6 +199,7 @@ SWAGGER_SETTINGS = {
         'Bearer': {'type': 'apiKey', 'name': 'Authorization', 'in': 'header'}
     }
 }
+SECURE_SSL_REDIRECT = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 

@@ -199,3 +199,5 @@ SWAGGER_SETTINGS = {
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'home/static'),
 ]
+
+SECURE_SSL_REDIRECT = True  # Redirige HTTP a HTTPS
